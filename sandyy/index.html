@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo de Stop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Jogo de Stop</hl>
+<button onclick="startGame()">Iniciar Jogo</button>
+<h2>Letra Sorteada: <span id="randomLetter">-</span></h2>
+
+<div id="categoriesContainer" style="display: none;">
+<h3>Escreva suas respostas para as categorias abaixo :</h3>
+<div class="input-group">
+<label>Nome :</label>
+<input type="text" id="nome" placeholder="Digite um nome">
+</div>
+<div class="input-group">
+<label>Cidade :</label>
+<input type="text" id="cidade" placeholder="Digite uma cidade">
+</div>
+<div class="input-group">
+<label>Animal :</label>
+<input type="text" id="animal" placeholder="Digite um animal">
+</div>
+<div class="input-group">
+<label>Fruta :</label>
+<input type="text" id="fruta" placeholder="Digite uma fruta">
+</div>
+<button onclick="submitAnswers()">Enviar Respostas</button>
+</div>
+
+<table id="resultTable" style="display: none;">
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Resposta</th>
+<th>Pontuação</th>
+</tr>
+</thead>
+<tbody id="resultBody"></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
